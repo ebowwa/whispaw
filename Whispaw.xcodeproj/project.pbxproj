@@ -14,10 +14,10 @@
 		766E95CF2C1FFD24001F98CF /* WhispawUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95CE2C1FFD24001F98CF /* WhispawUITestsLaunchTests.swift */; };
 		766E95DC2C1FFD42001F98CF /* WhispawApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95DB2C1FFD42001F98CF /* WhispawApp.swift */; };
 		766E95E02C1FFD73001F98CF /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95DE2C1FFD72001F98CF /* SplashView.swift */; };
-		766E95E12C1FFD73001F98CF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95DF2C1FFD72001F98CF /* MainView.swift */; };
 		766E95E42C1FFD99001F98CF /* BluetoothService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95E32C1FFD99001F98CF /* BluetoothService.swift */; };
 		766E95E82C2005AA001F98CF /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95E72C2005AA001F98CF /* SignInView.swift */; };
 		766E95EA2C2005BD001F98CF /* UserHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95E92C2005BD001F98CF /* UserHomeView.swift */; };
+		766E95EE2C200B71001F98CF /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95ED2C200B71001F98CF /* TutorialView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,10 +48,10 @@
 		766E95CE2C1FFD24001F98CF /* WhispawUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhispawUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		766E95DB2C1FFD42001F98CF /* WhispawApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WhispawApp.swift; path = "../../untitled folder/Whispaw/Whispaw/WhispawApp.swift"; sourceTree = "<group>"; };
 		766E95DE2C1FFD72001F98CF /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashView.swift; path = "../../untitled folder/Views/SplashView.swift"; sourceTree = "<group>"; };
-		766E95DF2C1FFD72001F98CF /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainView.swift; path = "../../untitled folder/Views/MainView.swift"; sourceTree = "<group>"; };
 		766E95E32C1FFD99001F98CF /* BluetoothService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BluetoothService.swift; path = "../../untitled folder/Services/BluetoothService.swift"; sourceTree = "<group>"; };
 		766E95E72C2005AA001F98CF /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		766E95E92C2005BD001F98CF /* UserHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHomeView.swift; sourceTree = "<group>"; };
+		766E95ED2C200B71001F98CF /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,10 +138,10 @@
 		766E95DD2C1FFD56001F98CF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				766E95DF2C1FFD72001F98CF /* MainView.swift */,
 				766E95DE2C1FFD72001F98CF /* SplashView.swift */,
 				766E95E72C2005AA001F98CF /* SignInView.swift */,
 				766E95E92C2005BD001F98CF /* UserHomeView.swift */,
+				766E95ED2C200B71001F98CF /* TutorialView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -293,7 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				766E95E12C1FFD73001F98CF /* MainView.swift in Sources */,
+				766E95EE2C200B71001F98CF /* TutorialView.swift in Sources */,
 				766E95DC2C1FFD42001F98CF /* WhispawApp.swift in Sources */,
 				766E95E02C1FFD73001F98CF /* SplashView.swift in Sources */,
 				766E95E42C1FFD99001F98CF /* BluetoothService.swift in Sources */,
