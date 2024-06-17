@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		766E95B22C1FFD1F001F98CF /* WhispawApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95B12C1FFD1F001F98CF /* WhispawApp.swift */; };
 		766E95B42C1FFD1F001F98CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95B32C1FFD1F001F98CF /* ContentView.swift */; };
 		766E95B62C1FFD24001F98CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 766E95B52C1FFD24001F98CF /* Assets.xcassets */; };
 		766E95B92C1FFD24001F98CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 766E95B82C1FFD24001F98CF /* Preview Assets.xcassets */; };
 		766E95C32C1FFD24001F98CF /* WhispawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95C22C1FFD24001F98CF /* WhispawTests.swift */; };
 		766E95CD2C1FFD24001F98CF /* WhispawUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95CC2C1FFD24001F98CF /* WhispawUITests.swift */; };
 		766E95CF2C1FFD24001F98CF /* WhispawUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95CE2C1FFD24001F98CF /* WhispawUITestsLaunchTests.swift */; };
+		766E95DC2C1FFD42001F98CF /* WhispawApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95DB2C1FFD42001F98CF /* WhispawApp.swift */; };
+		766E95E02C1FFD73001F98CF /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95DE2C1FFD72001F98CF /* SplashView.swift */; };
+		766E95E12C1FFD73001F98CF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95DF2C1FFD72001F98CF /* MainView.swift */; };
+		766E95E42C1FFD99001F98CF /* BluetoothService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95E32C1FFD99001F98CF /* BluetoothService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +38,6 @@
 
 /* Begin PBXFileReference section */
 		766E95AE2C1FFD1F001F98CF /* Whispaw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whispaw.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		766E95B12C1FFD1F001F98CF /* WhispawApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhispawApp.swift; sourceTree = "<group>"; };
 		766E95B32C1FFD1F001F98CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		766E95B52C1FFD24001F98CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		766E95B82C1FFD24001F98CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -44,6 +46,10 @@
 		766E95C82C1FFD24001F98CF /* WhispawUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhispawUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		766E95CC2C1FFD24001F98CF /* WhispawUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhispawUITests.swift; sourceTree = "<group>"; };
 		766E95CE2C1FFD24001F98CF /* WhispawUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhispawUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		766E95DB2C1FFD42001F98CF /* WhispawApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WhispawApp.swift; path = "../../untitled folder/Whispaw/Whispaw/WhispawApp.swift"; sourceTree = "<group>"; };
+		766E95DE2C1FFD72001F98CF /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashView.swift; path = "../../untitled folder/Views/SplashView.swift"; sourceTree = "<group>"; };
+		766E95DF2C1FFD72001F98CF /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainView.swift; path = "../../untitled folder/Views/MainView.swift"; sourceTree = "<group>"; };
+		766E95E32C1FFD99001F98CF /* BluetoothService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BluetoothService.swift; path = "../../untitled folder/Services/BluetoothService.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,9 @@
 		766E95A52C1FFD1F001F98CF = {
 			isa = PBXGroup;
 			children = (
+				766E95E52C1FFDA1001F98CF /* Resources */,
+				766E95E22C1FFD8A001F98CF /* Services */,
+				766E95DD2C1FFD56001F98CF /* Views */,
 				766E95B02C1FFD1F001F98CF /* Whispaw */,
 				766E95C12C1FFD24001F98CF /* WhispawTests */,
 				766E95CB2C1FFD24001F98CF /* WhispawUITests */,
@@ -94,10 +103,8 @@
 		766E95B02C1FFD1F001F98CF /* Whispaw */ = {
 			isa = PBXGroup;
 			children = (
-				766E95B12C1FFD1F001F98CF /* WhispawApp.swift */,
+				766E95DB2C1FFD42001F98CF /* WhispawApp.swift */,
 				766E95B32C1FFD1F001F98CF /* ContentView.swift */,
-				766E95B52C1FFD24001F98CF /* Assets.xcassets */,
-				766E95B72C1FFD24001F98CF /* Preview Content */,
 			);
 			path = Whispaw;
 			sourceTree = "<group>";
@@ -125,6 +132,32 @@
 				766E95CE2C1FFD24001F98CF /* WhispawUITestsLaunchTests.swift */,
 			);
 			path = WhispawUITests;
+			sourceTree = "<group>";
+		};
+		766E95DD2C1FFD56001F98CF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				766E95DF2C1FFD72001F98CF /* MainView.swift */,
+				766E95DE2C1FFD72001F98CF /* SplashView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		766E95E22C1FFD8A001F98CF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				766E95E32C1FFD99001F98CF /* BluetoothService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		766E95E52C1FFDA1001F98CF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				766E95B72C1FFD24001F98CF /* Preview Content */,
+				766E95B52C1FFD24001F98CF /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +291,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				766E95B42C1FFD1F001F98CF /* ContentView.swift in Sources */,
-				766E95B22C1FFD1F001F98CF /* WhispawApp.swift in Sources */,
+				766E95E12C1FFD73001F98CF /* MainView.swift in Sources */,
+				766E95DC2C1FFD42001F98CF /* WhispawApp.swift in Sources */,
+				766E95E02C1FFD73001F98CF /* SplashView.swift in Sources */,
+				766E95E42C1FFD99001F98CF /* BluetoothService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +457,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Whispaw/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Whispaw\"";
 				DEVELOPMENT_TEAM = 42R8ZPM5N8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -450,7 +486,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Whispaw/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Whispaw\"";
 				DEVELOPMENT_TEAM = 42R8ZPM5N8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
