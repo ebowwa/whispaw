@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		766E95B42C1FFD1F001F98CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95B32C1FFD1F001F98CF /* ContentView.swift */; };
 		766E95B62C1FFD24001F98CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 766E95B52C1FFD24001F98CF /* Assets.xcassets */; };
 		766E95B92C1FFD24001F98CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 766E95B82C1FFD24001F98CF /* Preview Assets.xcassets */; };
 		766E95C32C1FFD24001F98CF /* WhispawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95C22C1FFD24001F98CF /* WhispawTests.swift */; };
@@ -17,6 +16,8 @@
 		766E95E02C1FFD73001F98CF /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95DE2C1FFD72001F98CF /* SplashView.swift */; };
 		766E95E12C1FFD73001F98CF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95DF2C1FFD72001F98CF /* MainView.swift */; };
 		766E95E42C1FFD99001F98CF /* BluetoothService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95E32C1FFD99001F98CF /* BluetoothService.swift */; };
+		766E95E82C2005AA001F98CF /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95E72C2005AA001F98CF /* SignInView.swift */; };
+		766E95EA2C2005BD001F98CF /* UserHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95E92C2005BD001F98CF /* UserHomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,6 @@
 
 /* Begin PBXFileReference section */
 		766E95AE2C1FFD1F001F98CF /* Whispaw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whispaw.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		766E95B32C1FFD1F001F98CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		766E95B52C1FFD24001F98CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		766E95B82C1FFD24001F98CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		766E95BE2C1FFD24001F98CF /* WhispawTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhispawTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +50,8 @@
 		766E95DE2C1FFD72001F98CF /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashView.swift; path = "../../untitled folder/Views/SplashView.swift"; sourceTree = "<group>"; };
 		766E95DF2C1FFD72001F98CF /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainView.swift; path = "../../untitled folder/Views/MainView.swift"; sourceTree = "<group>"; };
 		766E95E32C1FFD99001F98CF /* BluetoothService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BluetoothService.swift; path = "../../untitled folder/Services/BluetoothService.swift"; sourceTree = "<group>"; };
+		766E95E72C2005AA001F98CF /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		766E95E92C2005BD001F98CF /* UserHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				766E95DB2C1FFD42001F98CF /* WhispawApp.swift */,
-				766E95B32C1FFD1F001F98CF /* ContentView.swift */,
 			);
 			path = Whispaw;
 			sourceTree = "<group>";
@@ -139,6 +140,8 @@
 			children = (
 				766E95DF2C1FFD72001F98CF /* MainView.swift */,
 				766E95DE2C1FFD72001F98CF /* SplashView.swift */,
+				766E95E72C2005AA001F98CF /* SignInView.swift */,
+				766E95E92C2005BD001F98CF /* UserHomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -290,11 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				766E95B42C1FFD1F001F98CF /* ContentView.swift in Sources */,
 				766E95E12C1FFD73001F98CF /* MainView.swift in Sources */,
 				766E95DC2C1FFD42001F98CF /* WhispawApp.swift in Sources */,
 				766E95E02C1FFD73001F98CF /* SplashView.swift in Sources */,
 				766E95E42C1FFD99001F98CF /* BluetoothService.swift in Sources */,
+				766E95EA2C2005BD001F98CF /* UserHomeView.swift in Sources */,
+				766E95E82C2005AA001F98CF /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +465,9 @@
 				DEVELOPMENT_TEAM = 42R8ZPM5N8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Whispaw/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "The App uses this data to connect to the Pet collar";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -490,6 +497,9 @@
 				DEVELOPMENT_TEAM = 42R8ZPM5N8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Whispaw/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "The App uses this data to connect to the Pet collar";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
