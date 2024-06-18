@@ -1,4 +1,4 @@
-#  Explained
+#  Models Readme
 
 In iOS development, there are two main types of components: models and views. Understanding the difference between them is crucial for building well-structured and maintainable apps. Here's an explanation of the differences between models and views:
 

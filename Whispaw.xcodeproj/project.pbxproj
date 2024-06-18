@@ -18,6 +18,11 @@
 		766E95E82C2005AA001F98CF /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95E72C2005AA001F98CF /* SignInView.swift */; };
 		766E95EA2C2005BD001F98CF /* UserHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95E92C2005BD001F98CF /* UserHomeView.swift */; };
 		766E95EE2C200B71001F98CF /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95ED2C200B71001F98CF /* TutorialView.swift */; };
+		7683525C2C20C6B40094553E /* DeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7683525B2C20C6B40094553E /* DeviceModel.swift */; };
+		76F1956C2C215EB7000D0E7C /* SpeechTranscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F1956B2C215EB7000D0E7C /* SpeechTranscriber.swift */; };
+		76F1956E2C216085000D0E7C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F1956D2C216085000D0E7C /* UserModel.swift */; };
+		76F195722C216178000D0E7C /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F195712C216178000D0E7C /* SignUpView.swift */; };
+		76F195742C21633F000D0E7C /* TranscriptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F195732C21633F000D0E7C /* TranscriptView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,12 @@
 		766E95E92C2005BD001F98CF /* UserHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHomeView.swift; sourceTree = "<group>"; };
 		766E95ED2C200B71001F98CF /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
 		766E95F12C200DE7001F98CF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7683524D2C2097C10094553E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7683525B2C20C6B40094553E /* DeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModel.swift; sourceTree = "<group>"; };
+		76F1956B2C215EB7000D0E7C /* SpeechTranscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechTranscriber.swift; sourceTree = "<group>"; };
+		76F1956D2C216085000D0E7C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		76F195712C216178000D0E7C /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		76F195732C21633F000D0E7C /* TranscriptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +155,8 @@
 				766E95E72C2005AA001F98CF /* SignInView.swift */,
 				766E95E92C2005BD001F98CF /* UserHomeView.swift */,
 				766E95ED2C200B71001F98CF /* TutorialView.swift */,
+				76F195712C216178000D0E7C /* SignUpView.swift */,
+				76F195732C21633F000D0E7C /* TranscriptView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -152,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				766E95E32C1FFD99001F98CF /* BluetoothService.swift */,
+				7683524D2C2097C10094553E /* README.md */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -169,6 +183,9 @@
 			isa = PBXGroup;
 			children = (
 				766E95F12C200DE7001F98CF /* README.md */,
+				7683525B2C20C6B40094553E /* DeviceModel.swift */,
+				76F1956B2C215EB7000D0E7C /* SpeechTranscriber.swift */,
+				76F1956D2C216085000D0E7C /* UserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -304,10 +321,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				766E95EE2C200B71001F98CF /* TutorialView.swift in Sources */,
+				76F1956C2C215EB7000D0E7C /* SpeechTranscriber.swift in Sources */,
 				766E95DC2C1FFD42001F98CF /* WhispawApp.swift in Sources */,
+				76F195742C21633F000D0E7C /* TranscriptView.swift in Sources */,
 				766E95E02C1FFD73001F98CF /* SplashView.swift in Sources */,
 				766E95E42C1FFD99001F98CF /* BluetoothService.swift in Sources */,
 				766E95EA2C2005BD001F98CF /* UserHomeView.swift in Sources */,
+				76F195722C216178000D0E7C /* SignUpView.swift in Sources */,
+				7683525C2C20C6B40094553E /* DeviceModel.swift in Sources */,
+				76F1956E2C216085000D0E7C /* UserModel.swift in Sources */,
 				766E95E82C2005AA001F98CF /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,6 +500,9 @@
 				INFOPLIST_FILE = Whispaw/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "The App uses this data to connect to the Pet collar";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Track the device battery and passing data";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to your microphone so you can share audio explanations of Bugs you find.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "We need access to speech recognition to transcribe your speech.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -510,6 +535,9 @@
 				INFOPLIST_FILE = Whispaw/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "The App uses this data to connect to the Pet collar";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Track the device battery and passing data";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to your microphone so you can share audio explanations of Bugs you find.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "We need access to speech recognition to transcribe your speech.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
