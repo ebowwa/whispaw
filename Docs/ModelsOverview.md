@@ -11,3 +11,5 @@ Responsibilities: Models are responsible for holding data, validating it, and pr
 Code Location: Model code is usually placed in separate files or folders, such as a "Models" folder, to keep it separate from the user interface code.
 
 **USER, Pet Names(Devices), info stored on User Preferences & pet behavior, device battery, audio**
+
+

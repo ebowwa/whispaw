@@ -13,21 +13,7 @@ struct SignUpView: View {
 
     var body: some View {
         VStack {
-            Text("Sign Up")
-                .font(.largeTitle)
-                .padding()
-
-            TextField("Username", text: $username)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-
-            TextField("Email", text: $email)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-
-            SecureField("Password", text: $password)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
+            SignUpForm(username: $username, email: $email, password: $password)
 
             Button(action: {
                 // Create a new user and save it
