@@ -9,13 +9,21 @@
 import SwiftUI
 
 struct DashboardView: View {
+    @StateObject private var deviceModel = DeviceModel()
+    @StateObject private var bluetoothService = BluetoothService()
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
             HeaderView()
             ScrollView {
                 VStack(spacing: 16) {
-                    PetInfoView()
-                    ActivityHistoryView()
+                    PetInfoView(deviceModel: deviceModel)
+                        .onAppear {
+                            deviceModel.connect()
+                        }
+                        .onDisappear {
+                            deviceModel.disconnect()
+                        }
+                 ActivityHistoryView()
                     SettingsView()
                 }
                 .padding()

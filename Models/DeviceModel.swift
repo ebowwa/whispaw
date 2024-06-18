@@ -12,6 +12,11 @@ class DeviceModel: NSObject, ObservableObject, CBPeripheralDelegate {
     @Published var name: String?
     @Published var uuid: UUID?
     @Published var isConnected: Bool = false
+    @Published var batteryLevel: Int = 0 {
+        didSet {
+            print("Battery level updated to \(batteryLevel)%")
+        }
+    }
     private var peripheral: CBPeripheral?
     private var services: [CBService] = []
     private var characteristics: [CBUUID: CBCharacteristic] = [:]
@@ -103,6 +108,7 @@ class DeviceModel: NSObject, ObservableObject, CBPeripheralDelegate {
             } else if characteristic.uuid == CBUUID(string: "2A19") {
                 if let batteryLevel = value.first {
                     print("Battery Level: \(batteryLevel)%")
+                    self.batteryLevel = Int(batteryLevel) // Update the battery level property
                 }
             }
         }

@@ -9,20 +9,20 @@ import SwiftUI
 
 struct HeaderView: View {
     var body: some View {
-        HStack {
+        ZStack {
+            BackgroundGradientView()
+                .frame(height: 60) // Adjust the height to match the original header size
+            
             HStack {
-                Image("placeholder")
-                    .resizable()
-                    .frame(width: 40, height: 40)
-                    .clipShape(Circle())
-                Text("PetComm")
-                    .font(.headline)
-                    .foregroundColor(.white)
+                HStack {
+                    Text("Whispaw")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                }
+                Spacer()
+                AvatarView()
             }
-            Spacer()
-            AvatarView()
+            .padding()
         }
-        .padding()
-        .background(Color(hex: "#00b894"))
     }
 }

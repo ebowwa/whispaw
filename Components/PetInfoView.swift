@@ -7,6 +7,8 @@
 import SwiftUI
 
 struct PetInfoView: View {
+    @ObservedObject var deviceModel: DeviceModel
+
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
             HStack {
@@ -21,7 +23,7 @@ struct PetInfoView: View {
                 BadgeView(text: "No Alerts")
             }
             HStack(spacing: 16) {
-                InfoBoxView(icon: "mic.fill", title: "Voice Battery", value: "87%")
+                InfoBoxView(icon: "mic.fill", title: "Voice Battery", value: "\(deviceModel.batteryLevel)%")
                 InfoBoxView(icon: "moon.fill", title: "Mood", value: "Excited")
             }
         }

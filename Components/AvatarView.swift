@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AvatarView: View {
     var body: some View {
-        Image("placeholder-user")
+        Image("pug-silhouette")
             .resizable()
             .frame(width: 40, height: 40)
             .clipShape(Circle())
