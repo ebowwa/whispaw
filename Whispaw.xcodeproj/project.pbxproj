@@ -16,7 +16,6 @@
 		766E95DC2C1FFD42001F98CF /* WhispawApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95DB2C1FFD42001F98CF /* WhispawApp.swift */; };
 		766E95E02C1FFD73001F98CF /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95DE2C1FFD72001F98CF /* SplashView.swift */; };
 		766E95E42C1FFD99001F98CF /* BluetoothService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95E32C1FFD99001F98CF /* BluetoothService.swift */; };
-		766E95E82C2005AA001F98CF /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95E72C2005AA001F98CF /* SignInView.swift */; };
 		766E95EE2C200B71001F98CF /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95ED2C200B71001F98CF /* TutorialView.swift */; };
 		7683525C2C20C6B40094553E /* DeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7683525B2C20C6B40094553E /* DeviceModel.swift */; };
 		76AADBDA2C21F056003264AE /* DeviceModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AADBD92C21F056003264AE /* DeviceModelDelegate.swift */; };
@@ -68,6 +67,7 @@
 
 /* Begin PBXFileReference section */
 		762D39292C234296002ECD21 /* HelloWave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWave.swift; sourceTree = "<group>"; };
+		762D392B2C236AB0002ECD21 /* ViewsPlan.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ViewsPlan.md; sourceTree = "<group>"; };
 		766E95AE2C1FFD1F001F98CF /* Whispaw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whispaw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		766E95B52C1FFD24001F98CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		766E95B82C1FFD24001F98CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -79,7 +79,6 @@
 		766E95DB2C1FFD42001F98CF /* WhispawApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WhispawApp.swift; path = "../../untitled folder/Whispaw/Whispaw/WhispawApp.swift"; sourceTree = "<group>"; };
 		766E95DE2C1FFD72001F98CF /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplashView.swift; path = "../../untitled folder/Views/SplashView.swift"; sourceTree = "<group>"; };
 		766E95E32C1FFD99001F98CF /* BluetoothService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BluetoothService.swift; path = "../../untitled folder/Services/BluetoothService.swift"; sourceTree = "<group>"; };
-		766E95E72C2005AA001F98CF /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		766E95ED2C200B71001F98CF /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
 		7683525B2C20C6B40094553E /* DeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModel.swift; sourceTree = "<group>"; };
 		76AADBD92C21F056003264AE /* DeviceModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModelDelegate.swift; sourceTree = "<group>"; };
@@ -205,13 +204,13 @@
 			isa = PBXGroup;
 			children = (
 				766E95DE2C1FFD72001F98CF /* SplashView.swift */,
-				766E95E72C2005AA001F98CF /* SignInView.swift */,
 				766E95ED2C200B71001F98CF /* TutorialView.swift */,
 				76F195712C216178000D0E7C /* SignUpView.swift */,
 				76F195732C21633F000D0E7C /* TranscriptView.swift */,
 				76AADBE62C220564003264AE /* DeviceView.swift */,
 				76AADBEA2C22070A003264AE /* ConnectedDeviceView.swift */,
 				76AADC142C221D93003264AE /* DashboardView.swift */,
+				762D392B2C236AB0002ECD21 /* ViewsPlan.md */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -452,7 +451,6 @@
 				76AADC152C221D93003264AE /* DashboardView.swift in Sources */,
 				76AADC012C22172F003264AE /* SignUpForm.swift in Sources */,
 				76F1956E2C216085000D0E7C /* UserModel.swift in Sources */,
-				766E95E82C2005AA001F98CF /* SignInView.swift in Sources */,
 				76AADC1B2C223AA7003264AE /* SpinnerView.swift in Sources */,
 				76AADC072C221BB9003264AE /* PetInfoView.swift in Sources */,
 			);
