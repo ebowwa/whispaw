@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		762D392A2C234296002ECD21 /* HelloWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762D39292C234296002ECD21 /* HelloWave.swift */; };
 		766E95B62C1FFD24001F98CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 766E95B52C1FFD24001F98CF /* Assets.xcassets */; };
 		766E95B92C1FFD24001F98CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 766E95B82C1FFD24001F98CF /* Preview Assets.xcassets */; };
 		766E95C32C1FFD24001F98CF /* WhispawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E95C22C1FFD24001F98CF /* WhispawTests.swift */; };
@@ -66,6 +67,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		762D39292C234296002ECD21 /* HelloWave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWave.swift; sourceTree = "<group>"; };
 		766E95AE2C1FFD1F001F98CF /* Whispaw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whispaw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		766E95B52C1FFD24001F98CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		766E95B82C1FFD24001F98CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 				76AADC102C221C42003264AE /* BadgeView.swift */,
 				76AADC1A2C223AA7003264AE /* SpinnerView.swift */,
 				76AADC1C2C22415D003264AE /* SplashConnecting.swift */,
+				762D39292C234296002ECD21 /* HelloWave.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				766E95EE2C200B71001F98CF /* TutorialView.swift in Sources */,
 				76AADBEB2C22070A003264AE /* ConnectedDeviceView.swift in Sources */,
 				76AADBF52C221428003264AE /* DeviceCardView.swift in Sources */,
+				762D392A2C234296002ECD21 /* HelloWave.swift in Sources */,
 				76AADBE72C220564003264AE /* DeviceView.swift in Sources */,
 				76AADBDA2C21F056003264AE /* DeviceModelDelegate.swift in Sources */,
 				76AADBF72C221446003264AE /* Color+Hex.swift in Sources */,

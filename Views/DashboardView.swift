@@ -5,12 +5,12 @@
 //  Created by ebowwa-mac-13inch on 6/18/24.
 //
 
-
 import SwiftUI
 
 struct DashboardView: View {
-    @StateObject private var deviceModel = DeviceModel()
+    @EnvironmentObject var deviceModel: DeviceModel
     @StateObject private var bluetoothService = BluetoothService()
+
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
             HeaderView()
@@ -23,7 +23,7 @@ struct DashboardView: View {
                         .onDisappear {
                             deviceModel.disconnect()
                         }
-                 ActivityHistoryView()
+                    ActivityHistoryView()
                     SettingsView()
                 }
                 .padding()
@@ -36,4 +36,5 @@ struct DashboardView: View {
 
 #Preview {
     DashboardView()
+        .environmentObject(DeviceModel.shared)
 }
