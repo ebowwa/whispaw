@@ -21,7 +21,6 @@
 		76AADBDA2C21F056003264AE /* DeviceModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AADBD92C21F056003264AE /* DeviceModelDelegate.swift */; };
 		76AADBDC2C21FBA8003264AE /* SpeechTranscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AADBDB2C21FBA8003264AE /* SpeechTranscriber.swift */; };
 		76AADBDE2C21FD15003264AE /* AudioDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AADBDD2C21FD15003264AE /* AudioDataHandler.swift */; };
-		76AADBE02C21FEC3003264AE /* SupabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AADBDF2C21FEC3003264AE /* SupabaseService.swift */; };
 		76AADBE52C220087003264AE /* DeviceProtocol.md in Resources */ = {isa = PBXBuildFile; fileRef = 76AADBE42C220087003264AE /* DeviceProtocol.md */; };
 		76AADBE72C220564003264AE /* DeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AADBE62C220564003264AE /* DeviceView.swift */; };
 		76AADBEB2C22070A003264AE /* ConnectedDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AADBEA2C22070A003264AE /* ConnectedDeviceView.swift */; };
@@ -84,7 +83,6 @@
 		76AADBD92C21F056003264AE /* DeviceModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModelDelegate.swift; sourceTree = "<group>"; };
 		76AADBDB2C21FBA8003264AE /* SpeechTranscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechTranscriber.swift; sourceTree = "<group>"; };
 		76AADBDD2C21FD15003264AE /* AudioDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioDataHandler.swift; sourceTree = "<group>"; };
-		76AADBDF2C21FEC3003264AE /* SupabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseService.swift; sourceTree = "<group>"; };
 		76AADBE22C21FFCF003264AE /* BluetoothServicesReadme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = BluetoothServicesReadme.md; sourceTree = "<group>"; };
 		76AADBE32C21FFFB003264AE /* ModelsOverview.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ModelsOverview.md; sourceTree = "<group>"; };
 		76AADBE42C220087003264AE /* DeviceProtocol.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = DeviceProtocol.md; path = ../../../Downloads/DeviceProtocol.md; sourceTree = "<group>"; };
@@ -222,7 +220,6 @@
 				766E95E32C1FFD99001F98CF /* BluetoothService.swift */,
 				76AADBDB2C21FBA8003264AE /* SpeechTranscriber.swift */,
 				76AADBDD2C21FD15003264AE /* AudioDataHandler.swift */,
-				76AADBDF2C21FEC3003264AE /* SupabaseService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -427,7 +424,6 @@
 				76AADC0F2C221C26003264AE /* InfoBoxView.swift in Sources */,
 				766E95EE2C200B71001F98CF /* TutorialView.swift in Sources */,
 				76AADBEB2C22070A003264AE /* ConnectedDeviceView.swift in Sources */,
-				76AADBE02C21FEC3003264AE /* SupabaseService.swift in Sources */,
 				76AADBF52C221428003264AE /* DeviceCardView.swift in Sources */,
 				76AADBE72C220564003264AE /* DeviceView.swift in Sources */,
 				76AADBDA2C21F056003264AE /* DeviceModelDelegate.swift in Sources */,
