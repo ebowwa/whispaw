@@ -7,11 +7,13 @@
 import SwiftUI
 
 struct ConnectedDeviceView: View {
+    @EnvironmentObject var deviceModel: DeviceModel
+    
     var body: some View {
         ZStack {
             BackgroundGradientView()
             VStack {
-                DeviceCardView()
+                DeviceCardView(batteryLevel: deviceModel.batteryLevel > 0 ? deviceModel.batteryLevel : nil)
             }
         }
     }
@@ -20,5 +22,6 @@ struct ConnectedDeviceView: View {
 struct ConnectedDeviceView_Previews: PreviewProvider {
     static var previews: some View {
         ConnectedDeviceView()
+            .environmentObject(DeviceModel.shared)
     }
 }

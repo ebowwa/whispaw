@@ -4,6 +4,7 @@
 //
 //  Created by ebowwa-mac-13inch on 6/16/24.
 //
+// lets get started, verify connected device, add context to connected device(s) and pet(s){general attitude, name, image, personality, pet type(s)}, how to use the app/service, invite friends
 import SwiftUI
 
 struct TutorialView: View {

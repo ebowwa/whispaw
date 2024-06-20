@@ -7,6 +7,8 @@
 import SwiftUI
 
 struct DeviceCardView: View {
+    var batteryLevel: Int?
+
     var body: some View {
         VStack(spacing: 20) {
             // Pet Collar Image
@@ -33,7 +35,7 @@ struct DeviceCardView: View {
                 Button(action: {
                     // Connect action
                 }) {
-                    Text("Connect")
+                    Text("Disconnect")
                         .frame(minWidth: 0, maxWidth: .infinity)
                         .padding()
                         .background(Color.blue)
@@ -44,7 +46,7 @@ struct DeviceCardView: View {
                 Button(action: {
                     // Manage action
                 }) {
-                    Text("Manage")
+                    Text("Settings")
                         .frame(minWidth: 0, maxWidth: .infinity)
                         .padding()
                         .background(Color.clear)
@@ -63,10 +65,16 @@ struct DeviceCardView: View {
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                     Spacer()
-                    Text("90%")
-                        .font(.subheadline)
-                        .fontWeight(.bold)
-                        .foregroundColor(.primary)
+                    if let batteryLevel = batteryLevel {
+                        Text("\(batteryLevel)%")
+                            .font(.subheadline)
+                            .fontWeight(.bold)
+                            .foregroundColor(.primary)
+                    } else {
+                        Text("Battery level not available")
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
+                    }
                 }
                 
                 ZStack(alignment: .leading) {
@@ -75,10 +83,12 @@ struct DeviceCardView: View {
                         .foregroundColor(Color(hex: "#f5f5f5"))
                         .cornerRadius(4)
                     
-                    Rectangle()
-                        .frame(width: 200 * 0.9, height: 8)
-                        .foregroundColor(Color(hex: "#4CAF50"))
-                        .cornerRadius(4)
+                    if let batteryLevel = batteryLevel {
+                        Rectangle()
+                            .frame(width: CGFloat(batteryLevel) * 2, height: 8)
+                            .foregroundColor(Color(hex: "#4CAF50"))
+                            .cornerRadius(4)
+                    }
                 }
             }
             
