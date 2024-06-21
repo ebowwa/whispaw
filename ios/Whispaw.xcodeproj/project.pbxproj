@@ -44,6 +44,9 @@
 		76AADC152C221D93003264AE /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AADC142C221D93003264AE /* DashboardView.swift */; };
 		76AADC1B2C223AA7003264AE /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AADC1A2C223AA7003264AE /* SpinnerView.swift */; };
 		76AADC1D2C22415D003264AE /* SplashConnecting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AADC1C2C22415D003264AE /* SplashConnecting.swift */; };
+		76C216642C24B6BD00F0BF11 /* CharacteristicHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C216632C24B6BD00F0BF11 /* CharacteristicHandler.swift */; };
+		76C216662C24B6E000F0BF11 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C216652C24B6E000F0BF11 /* LogManager.swift */; };
+		76C2166C2C24C19400F0BF11 /* ConnectionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C2166B2C24C19400F0BF11 /* ConnectionState.swift */; };
 		76F1956E2C216085000D0E7C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F1956D2C216085000D0E7C /* UserModel.swift */; };
 		76F195722C216178000D0E7C /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F195712C216178000D0E7C /* SignUpView.swift */; };
 		76F195742C21633F000D0E7C /* TranscriptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F195732C21633F000D0E7C /* TranscriptView.swift */; };
@@ -115,6 +118,9 @@
 		76AADC1A2C223AA7003264AE /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
 		76AADC1C2C22415D003264AE /* SplashConnecting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashConnecting.swift; sourceTree = "<group>"; };
 		76AADC1E2C2244C8003264AE /* SwiftNavigation.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SwiftNavigation.md; sourceTree = "<group>"; };
+		76C216632C24B6BD00F0BF11 /* CharacteristicHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacteristicHandler.swift; sourceTree = "<group>"; };
+		76C216652C24B6E000F0BF11 /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
+		76C2166B2C24C19400F0BF11 /* ConnectionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionState.swift; sourceTree = "<group>"; };
 		76F1956D2C216085000D0E7C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		76F195712C216178000D0E7C /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		76F195732C21633F000D0E7C /* TranscriptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptView.swift; sourceTree = "<group>"; };
@@ -272,6 +278,9 @@
 			children = (
 				7683525B2C20C6B40094553E /* DeviceModel.swift */,
 				76F1956D2C216085000D0E7C /* UserModel.swift */,
+				76C216632C24B6BD00F0BF11 /* CharacteristicHandler.swift */,
+				76C216652C24B6E000F0BF11 /* LogManager.swift */,
+				76C2166B2C24C19400F0BF11 /* ConnectionState.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -482,9 +491,12 @@
 				76F195722C216178000D0E7C /* SignUpView.swift in Sources */,
 				76AADBF92C221533003264AE /* AdaptiveBackgroundView.swift in Sources */,
 				7683525C2C20C6B40094553E /* DeviceModel.swift in Sources */,
+				76C2166C2C24C19400F0BF11 /* ConnectionState.swift in Sources */,
 				76AADC152C221D93003264AE /* DashboardView.swift in Sources */,
 				76AADC012C22172F003264AE /* SignUpForm.swift in Sources */,
 				76F1956E2C216085000D0E7C /* UserModel.swift in Sources */,
+				76C216662C24B6E000F0BF11 /* LogManager.swift in Sources */,
+				76C216642C24B6BD00F0BF11 /* CharacteristicHandler.swift in Sources */,
 				76AADC1B2C223AA7003264AE /* SpinnerView.swift in Sources */,
 				76AADC072C221BB9003264AE /* PetInfoView.swift in Sources */,
 			);
