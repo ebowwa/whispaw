@@ -17,3 +17,10 @@ DerivedData
 *.ipa
 *.xcuserstate
 .DS_Store
+
+
+# React
+ENV
+.ENV
+.env
+env
