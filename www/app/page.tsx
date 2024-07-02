@@ -1,4 +1,4 @@
-import EmailForm from "@/components/EmailFom";
+import EmailForm from "@/components/(sections)/splash-waitlist/EmailFom";
 import Image from "next/image";
 import { Toaster } from "react-hot-toast";
 
