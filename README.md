@@ -3,3 +3,5 @@
 
 
 [looking to invest?](https://docs.google.com/forms/d/e/1FAIpQLSdah_0XuKhI222IIyCD6Kn6lhLru9B5Fv0Zs_KxnpFvR9XIHg/viewform?usp=sf_link)
+
+[looking to contribute?](https://docs.google.com/forms/d/e/1FAIpQLSdKNB7K5fO2g30cl9yRB51Ya9u_nY5kpweP_xBrkethxsWjkA/viewform?usp=sf_link)
