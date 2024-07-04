@@ -14,6 +14,22 @@
  * limitations under the License.
  */
 
+/*
+ * Copyright 2024 Marcus Alexander Tjomsaas
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 #include "battery.h"
 
 #include <zephyr/kernel.h>
@@ -255,5 +271,78 @@ int battery_init()
     ret |= battery_enable_read();
     ret |= battery_set_fast_charge();
 
+    return ret;
+}
+
+// New functions for speaker control
+#define GPIO_SPEAKER_PIN_15 15
+#define GPIO_SPEAKER_PIN_16 16
+#define GPIO_SPEAKER_PIN_17 17
+#define GPIO_SPEAKER_PIN_18 18
+#define GPIO_SPEAKER_PIN_19 19
+
+int speaker_init()
+{
+    int ret = 0;
+
+    if (!device_is_ready(gpio_battery_dev))
+    {
+        LOG_ERR("GPIO device not found!");
+        return -EIO;
+    }
+
+    ret |= gpio_pin_configure(gpio_battery_dev, GPIO_SPEAKER_PIN_15, GPIO_OUTPUT | GPIO_ACTIVE_HIGH);
+    ret |= gpio_pin_configure(gpio_battery_dev, GPIO_SPEAKER_PIN_16, GPIO_OUTPUT | GPIO_ACTIVE_HIGH);
+    ret |= gpio_pin_configure(gpio_battery_dev, GPIO_SPEAKER_PIN_17, GPIO_OUTPUT | GPIO_ACTIVE_HIGH);
+    ret |= gpio_pin_configure(gpio_battery_dev, GPIO_SPEAKER_PIN_18, GPIO_OUTPUT | GPIO_ACTIVE_HIGH);
+    ret |= gpio_pin_configure(gpio_battery_dev, GPIO_SPEAKER_PIN_19, GPIO_OUTPUT | GPIO_ACTIVE_HIGH);
+
+    if (ret)
+    {
+        LOG_ERR("Speaker GPIO configure failed!");
+        return ret;
+    }
+
+    LOG_INF("Speaker GPIO initialized");
+    return ret;
+}
+
+int speaker_on()
+{
+    int ret = 0;
+
+    ret |= gpio_pin_set(gpio_battery_dev, GPIO_SPEAKER_PIN_15, 1);
+    ret |= gpio_pin_set(gpio_battery_dev, GPIO_SPEAKER_PIN_16, 1);
+    ret |= gpio_pin_set(gpio_battery_dev, GPIO_SPEAKER_PIN_17, 1);
+    ret |= gpio_pin_set(gpio_battery_dev, GPIO_SPEAKER_PIN_18, 1);
+    ret |= gpio_pin_set(gpio_battery_dev, GPIO_SPEAKER_PIN_19, 1);
+
+    if (ret)
+    {
+        LOG_ERR("Failed to turn on speaker");
+        return ret;
+    }
+
+    LOG_INF("Speaker turned on");
+    return ret;
+}
+
+int speaker_off()
+{
+    int ret = 0;
+
+    ret |= gpio_pin_set(gpio_battery_dev, GPIO_SPEAKER_PIN_15, 0);
+    ret |= gpio_pin_set(gpio_battery_dev, GPIO_SPEAKER_PIN_16, 0);
+    ret |= gpio_pin_set(gpio_battery_dev, GPIO_SPEAKER_PIN_17, 0);
+    ret |= gpio_pin_set(gpio_battery_dev, GPIO_SPEAKER_PIN_18, 0);
+    ret |= gpio_pin_set(gpio_battery_dev, GPIO_SPEAKER_PIN_19, 0);
+
+    if (ret)
+    {
+        LOG_ERR("Failed to turn off speaker");
+        return ret;
+    }
+
+    LOG_INF("Speaker turned off");
     return ret;
 }

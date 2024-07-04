@@ -76,4 +76,25 @@ int battery_get_percentage(uint8_t *battery_percentage, uint16_t battery_millivo
  */
 int battery_init(void);
 
+/**
+ * @brief Initialize the speaker GPIO pins.
+ *
+ * @retval 0 if successful. Negative errno number on error.
+ */
+int speaker_init(void);
+
+/**
+ * @brief Turn on the speaker.
+ *
+ * @retval 0 if successful. Negative errno number on error.
+ */
+int speaker_on(void);
+
+/**
+ * @brief Turn off the speaker.
+ *
+ * @retval 0 if successful. Negative errno number on error.
+ */
+int speaker_off(void);
+
 #endif
