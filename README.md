@@ -6,6 +6,6 @@
 
 [looking to contribute?](https://docs.google.com/forms/d/e/1FAIpQLSdKNB7K5fO2g30cl9yRB51Ya9u_nY5kpweP_xBrkethxsWjkA/viewform?usp=sf_link)
 
-[Feedback & Suggestions](https://docs.google.com/forms/d/e/1FAIpQLSd-6kyawetTPFcoRwelJuTSldPvczuoVnw5PL20SUY4oQhMaA/viewform?usp=sf_link)
+[feedback & suggestions](https://docs.google.com/forms/d/e/1FAIpQLSd-6kyawetTPFcoRwelJuTSldPvczuoVnw5PL20SUY4oQhMaA/viewform?usp=sf_link)
 
 [join the discussion](https://discord.gg/dthYTBez)

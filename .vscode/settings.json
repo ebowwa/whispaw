@@ -1,0 +1,6 @@
+{
+    "zephyr-ide.projects": {},
+    "nrf-connect.applications": [
+        "${workspaceFolder}/firmware/friend/firmware_v1.0"
+    ]
+}
