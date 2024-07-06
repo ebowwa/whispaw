@@ -4,6 +4,8 @@
 
 Welcome to **Whispaw**! This project is designed to revolutionize the way we understand and communicate with our furry friends. Whether you're a pet owner, an AI enthusiast, a venture capitalist, or simply curious about animal behavior, Whispaw offers a unique opportunity to delve into the world of animal communication.
 
+![Current Protype](/Users/ebowwa/Documents/whispaw/Docs/Examples/IMG_5193.png)
+
 ## 🌟 Features
 
 - **Advanced AI Translation**: Utilizes cutting-edge AI algorithms to decode animal sounds and behaviors.
